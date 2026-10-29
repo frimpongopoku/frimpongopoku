@@ -6,44 +6,48 @@ user: frimpongopoku
 
 hero:
   name: Frimpong Opoku Agyemang
-  thesis: One engineer. A fleet of agents.
+  thesis: Engineer first. AI is the multiplier.
   intro: >-
-    I run AI agents in parallel at every stage of a build: spec, code,
-    tests, review. I keep the architecture and the judgment calls. That's
-    how one person ships Mac apps, mobile apps, SaaS platforms and data
-    pipelines.
+    I've shipped Swift, React Native, TypeScript, Python and PHP since 2017,
+    so I know how these systems work and where they break. That's why AI
+    makes me faster: I design the system, direct the agents, catch what
+    they get wrong and fix it myself.
   # The sidebar in the hero terminal. state: run | done | wait | me
   agents:
-    - { label: you are here, tag: me, state: me }
+    - { label: architecture, tag: me, state: me }
     - { label: mac-app · swift, tag: build, state: run }
     - { label: storefront · web, tag: tests, state: run }
     - { label: mobile · expo, tag: build, state: run }
     - { label: spec-writer, tag: done, state: done }
-    - { label: reviewer, tag: waiting, state: wait }
+    - { label: code review, tag: me, state: wait }
 
 badges:
-  - { label: builds with, value: Claude Code · Cursor · Cline, color: f2b632 }
+  - { label: ships in, value: Swift · TypeScript · Python, color: f2b632 }
+  - { label: multiplied by, value: Claude Code · Cursor · Cline, color: c9a2ff }
   - { label: engineer at, value: MassEnergize, color: 3fa66b, url: "https://www.massenergize.org" }
   - { label: founder, value: Biibisoft, color: d4603a, url: "https://github.com/Biibisoft" }
   - { label: web, value: mrfrimpong.com, color: 6aa9ff, url: "https://www.mrfrimpong.com" }
 
 multiplier:
   lede: >-
-    AI writes most of the first drafts. I set the direction, keep the context
-    in order, and review everything before it ships. Every project starts as a
-    spec and a rules file, so the agents build to a plan.
-  toolkit:
-    - { name: Claude Code, does: "main driver: parallel sessions, one per workstream" }
-    - { name: Cursor, does: in-editor edits and fast refactors }
-    - { name: Cline, does: agentic tasks inside VS Code }
-    - { name: MCP, does: "agents wired into docs, data and services" }
-    - { name: LLM APIs, does: "RAG, embeddings and generation inside the products themselves" }
-  loop:
-    - { step: SPEC.md, does: product spec and designs, written first }
-    - { step: CLAUDE.md, does: "house rules: stack, style, limits" }
-    - { step: MEMORY + REGISTRY, does: agents keep a map of features and files }
-    - { step: parallel agents, does: one per platform or feature }
-    - { step: review + ship, does: I read every diff before it merges }
+    AI only multiplies what you already know. I've built these systems by hand
+    across four platforms, so I can tell good output from plausible output and
+    fix the difference myself. The engineering decisions stay with me. Agents
+    take the volume.
+  own:
+    - System architecture and data models
+    - Auth, security and payments (Mobile Money, bank)
+    - Performance work, like on-device video encoding
+    - Debugging the problems agents can't see
+    - Review of every diff before it merges
+  speeds_up:
+    - Scaffolding and boilerplate
+    - Test coverage
+    - Refactors that touch dozens of files
+    - Porting a feature across platforms
+    - Docs and first drafts of specs
+  loop: [SPEC.md, architecture, CLAUDE.md, parallel agents, review + ship]
+  toolkit: [Claude Code, Cursor, Cline, MCP, LLM APIs]
   # Static stats. Repo and language counts are fetched live at build time.
   platforms: 4
   platforms_note: macOS, mobile, web, backend

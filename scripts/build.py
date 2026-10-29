@@ -303,7 +303,7 @@ def stats_svg(m, stats):
     cells = [(str(m["platforms"]), "platforms", m["platforms_note"]),
              (str(stats["languages"]), "languages", "across public repos"),
              (str(stats["repos"]), "public repos", "and counting"),
-             ("1", "engineer", "plus the agents")]
+             ("2017", "shipping since", "on GitHub")]
     W, H = 900, 104
     svg = Svg(W, H, ", ".join(f"{v} {l}" for v, l, _ in cells))
     svg.add(f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" fill="{PANEL}" stroke="{BORDER}"/>')
@@ -341,10 +341,13 @@ def badge(b):
 
 
 def multiplier_md(m):
-    tools = "<br>\n".join(f'<b>{escape(t["name"])}</b>: {escape(t["does"])}' for t in m["toolkit"])
-    loop = "<br>\n".join(f'{i}. <code>{escape(s["step"])}</code> {escape(s["does"])}' for i, s in enumerate(m["loop"], 1))
-    return (f'{m["lede"]}\n\n<table>\n<tr><th align="left" width="50%">Toolkit</th><th align="left" width="50%">The loop</th></tr>\n'
-            f'<tr><td valign="top">\n{tools}\n</td><td valign="top">\n{loop}\n</td></tr>\n</table>')
+    own = "<br>\n".join(escape(x) for x in m["own"])
+    fast = "<br>\n".join(escape(x) for x in m["speeds_up"])
+    loop = " → ".join(f"<code>{escape(s)}</code>" for s in m["loop"])
+    return (f'{m["lede"]}\n\n<table>\n<tr><th align="left" width="50%">What I own</th>'
+            f'<th align="left" width="50%">What AI speeds up</th></tr>\n'
+            f'<tr><td valign="top">\n{own}\n</td><td valign="top">\n{fast}\n</td></tr>\n</table>\n\n'
+            f'**How a project runs:** {loop}<br>\n**Toolkit:** {" · ".join(m["toolkit"])}')
 
 
 def work_md(projects):
@@ -401,7 +404,7 @@ def main():
         "hero_alt": escape(f'{h["name"]}. {h["thesis"]} {h["intro"]}'),
         "badges": "\n".join(badge(b) for b in cfg["badges"]),
         "multiplier": multiplier_md(cfg["multiplier"]),
-        "stats_alt": escape(f'{cfg["multiplier"]["platforms"]} platforms, {stats["languages"]} languages, {stats["repos"]} public repos, 1 engineer'),
+        "stats_alt": escape(f'{cfg["multiplier"]["platforms"]} platforms, {stats["languages"]} languages, {stats["repos"]} public repos, shipping since 2017'),
         "work": work_md(cfg["projects"]),
         "stack": stack_md(cfg["stack"]),
         "vault": vault_md(cfg["projects"]),
