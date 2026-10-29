@@ -25,7 +25,7 @@ badges:
   - { label: ships in, value: Swift · TypeScript · Python, color: f2b632 }
   - { label: multiplied by, value: Claude Code · Cursor · Cline, color: c9a2ff }
   - { label: engineer at, value: MassEnergize, color: 3fa66b, url: "https://www.massenergize.org" }
-  - { label: founder, value: Biibisoft, color: d4603a, url: "https://github.com/Biibisoft" }
+  - { label: founder, value: Biibisoft, color: d4603a, url: "https://biibisoft.com" }
   - { label: web, value: mrfrimpong.com, color: 6aa9ff, url: "https://www.mrfrimpong.com" }
 
 multiplier:
@@ -70,8 +70,8 @@ projects:
     lane: studio
     name: Selltns
     featured: true
-    status: wip
-    url: https://selltns-web.vercel.app
+    status: live
+    url: https://selltns.com
     blurb: Storefronts for Ghanaian sellers. Set up a store, share one link, get paid by Mobile Money or bank.
     tags: [[TypeScript, 3178c6], [multi-tenant]]
 
@@ -79,8 +79,8 @@ projects:
     lane: studio
     name: Booktns
     featured: true
-    status: wip
-    url: https://booktns.vercel.app
+    status: live
+    url: https://booktns.com
     blurb: Booking and storefronts for beauty vendors. Customers book and buy; vendors run it from one dashboard.
     tags: [[TypeScript, 3178c6], [SaaS]]
 

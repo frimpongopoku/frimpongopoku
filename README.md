@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/ships%20in-Swift%20%C2%B7%20TypeScript%20%C2%B7%20Python-f2b632?style=flat-square&labelColor=2b2f2b" alt="ships in: Swift · TypeScript · Python">
 <img src="https://img.shields.io/badge/multiplied%20by-Claude%20Code%20%C2%B7%20Cursor%20%C2%B7%20Cline-c9a2ff?style=flat-square&labelColor=2b2f2b" alt="multiplied by: Claude Code · Cursor · Cline">
 <a href="https://www.massenergize.org"><img src="https://img.shields.io/badge/engineer%20at-MassEnergize-3fa66b?style=flat-square&labelColor=2b2f2b" alt="engineer at: MassEnergize"></a>
-<a href="https://github.com/Biibisoft"><img src="https://img.shields.io/badge/founder-Biibisoft-d4603a?style=flat-square&labelColor=2b2f2b" alt="founder: Biibisoft"></a>
+<a href="https://biibisoft.com"><img src="https://img.shields.io/badge/founder-Biibisoft-d4603a?style=flat-square&labelColor=2b2f2b" alt="founder: Biibisoft"></a>
 <a href="https://www.mrfrimpong.com"><img src="https://img.shields.io/badge/web-mrfrimpong.com-6aa9ff?style=flat-square&labelColor=2b2f2b" alt="web: mrfrimpong.com"></a>
 </p>
 
@@ -45,8 +45,8 @@ Docs and first drafts of specs
 
 <p>
 <a href="https://termite-174fd.web.app"><img src="assets/cards/termite.svg" width="49%" alt="Termite: A macOS terminal where tabs live in a sidebar, named and colour-tagged so you can find them."></a>
-<a href="https://selltns-web.vercel.app"><img src="assets/cards/selltns.svg" width="49%" alt="Selltns: Storefronts for Ghanaian sellers. Set up a store, share one link, get paid by Mobile Money or bank."></a>
-<a href="https://booktns.vercel.app"><img src="assets/cards/booktns.svg" width="49%" alt="Booktns: Booking and storefronts for beauty vendors. Customers book and buy; vendors run it from one dashboard."></a>
+<a href="https://selltns.com"><img src="assets/cards/selltns.svg" width="49%" alt="Selltns: Storefronts for Ghanaian sellers. Set up a store, share one link, get paid by Mobile Money or bank."></a>
+<a href="https://booktns.com"><img src="assets/cards/booktns.svg" width="49%" alt="Booktns: Booking and storefronts for beauty vendors. Customers book and buy; vendors run it from one dashboard."></a>
 <img src="assets/cards/jejestatus.svg" width="49%" alt="JejeStatus: Encodes videos once, on the phone, inside WhatsApp's limits, so Status stops blurring them.">
 </p>
 
