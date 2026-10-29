@@ -34,7 +34,7 @@ Docs and first drafts of specs
 </table>
 
 **How a project runs:** <code>SPEC.md</code> → <code>architecture</code> → <code>CLAUDE.md</code> → <code>parallel agents</code> → <code>review + ship</code><br>
-**Toolkit:** Claude Code · Cursor · Cline · MCP · LLM APIs
+**Toolkit:** [Termite](https://termite.site) (my own terminal) · Claude Code · Cursor · Cline · MCP · LLM APIs
 
 <img src="assets/stats.svg" width="100%" alt="4 platforms, 9 languages, 127 public repos, shipping since 2017">
 
@@ -44,7 +44,7 @@ Docs and first drafts of specs
 <sub>Products I own and build independently.</sub>
 
 <p>
-<a href="https://termite-174fd.web.app"><img src="assets/cards/termite.svg" width="49%" alt="Termite: A macOS terminal where tabs live in a sidebar, named and colour-tagged so you can find them."></a>
+<a href="https://termite.site"><img src="assets/cards/termite.svg" width="49%" alt="Termite: A macOS terminal where tabs live in a sidebar, named and colour-tagged so you can find them."></a>
 <a href="https://selltns.com"><img src="assets/cards/selltns.svg" width="49%" alt="Selltns: Storefronts for Ghanaian sellers. Set up a store, share one link, get paid by Mobile Money or bank."></a>
 <a href="https://booktns.com"><img src="assets/cards/booktns.svg" width="49%" alt="Booktns: Booking and storefronts for beauty vendors. Customers book and buy; vendors run it from one dashboard."></a>
 <img src="assets/cards/jejestatus.svg" width="49%" alt="JejeStatus: Encodes videos once, on the phone, inside WhatsApp's limits, so Status stops blurring them.">

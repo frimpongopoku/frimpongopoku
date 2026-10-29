@@ -47,7 +47,7 @@ multiplier:
     - Porting a feature across platforms
     - Docs and first drafts of specs
   loop: [SPEC.md, architecture, CLAUDE.md, parallel agents, review + ship]
-  toolkit: [Claude Code, Cursor, Cline, MCP, LLM APIs]
+  toolkit: ["[Termite](https://termite.site) (my own terminal)", Claude Code, Cursor, Cline, MCP, LLM APIs]
   # Static stats. Repo and language counts are fetched live at build time.
   platforms: 4
   platforms_note: macOS, mobile, web, backend
@@ -62,7 +62,7 @@ projects:
     name: Termite
     featured: true
     status: live
-    url: https://termite-174fd.web.app
+    url: https://termite.site
     blurb: A macOS terminal where tabs live in a sidebar, named and colour-tagged so you can find them.
     tags: [[Swift, f05138], [macOS]]
 
