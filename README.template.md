@@ -22,7 +22,7 @@
 
 {{stack}}
 
-{{vault}}
+<!-- "From the vault" is hidden. To show it again, put the vault placeholder (vault in double curly braces) back on this line. -->
 
 <br>
 <img src="assets/kente.svg" width="100%" alt="">

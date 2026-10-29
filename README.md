@@ -68,14 +68,7 @@ Docs and first drafts of specs
 | **ai + data** | pgvector · embeddings · RAG · LLM APIs |
 | **infra** | AWS · Docker · WordPress multisite |
 
-<details open>
-<summary><b>From the vault</b>: older things I'm still proud of</summary>
-
-- **[Fut Plaque](https://fut-plaque.vercel.app)**: make memories of your best FUT pulls. `JS + Python`
-- **[Perfect Attendance](https://github.com/frimpongopoku/perfect-attendance)**: a bot that attends your Google Meet classes for you. `Python`
-- **[100k](https://github.com/frimpongopoku/100k)**: map and scan trees toward a 100,000-tree planting goal. `Laravel + MySQL`
-
-</details>
+<!-- "From the vault" is hidden. To show it again, put the vault placeholder (vault in double curly braces) back on this line. -->
 
 <br>
 <img src="assets/kente.svg" width="100%" alt="">
