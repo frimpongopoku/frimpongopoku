@@ -61,7 +61,7 @@ class Font:
         opts = subset.Options()
         opts.flavor = "woff2"
         opts.layout_features = ["*"]
-        font = TTFont(self.path)
+        font = TTFont(self.path, recalcTimestamp=False)  # keep output identical between builds
         sub = subset.Subsetter(opts)
         sub.populate(text="".join(sorted(chars)) + " ")
         sub.subset(font)
