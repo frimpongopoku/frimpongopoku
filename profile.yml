@@ -1,0 +1,219 @@
+# profile.yml: everything on the profile README comes from this file.
+# Edit it, run `make build`, check `make preview`, then `make ship`.
+# The order of items here is the order on the page.
+
+user: frimpongopoku
+
+hero:
+  name: Frimpong Opoku Agyemang
+  thesis: One engineer. A fleet of agents.
+  intro: >-
+    I run AI agents in parallel at every stage of a build: spec, code,
+    tests, review. I keep the architecture and the judgment calls. That's
+    how one person ships Mac apps, mobile apps, SaaS platforms and data
+    pipelines.
+  # The sidebar in the hero terminal. state: run | done | wait | me
+  agents:
+    - { label: you are here, tag: me, state: me }
+    - { label: mac-app · swift, tag: build, state: run }
+    - { label: storefront · web, tag: tests, state: run }
+    - { label: mobile · expo, tag: build, state: run }
+    - { label: spec-writer, tag: done, state: done }
+    - { label: reviewer, tag: waiting, state: wait }
+
+badges:
+  - { label: builds with, value: Claude Code · Cursor · Cline, color: f2b632 }
+  - { label: engineer at, value: MassEnergize, color: 3fa66b, url: "https://www.massenergize.org" }
+  - { label: founder, value: Biibisoft, color: d4603a, url: "https://github.com/Biibisoft" }
+  - { label: web, value: mrfrimpong.com, color: 6aa9ff, url: "https://www.mrfrimpong.com" }
+
+multiplier:
+  lede: >-
+    AI writes most of the first drafts. I set the direction, keep the context
+    in order, and review everything before it ships. Every project starts as a
+    spec and a rules file, so the agents build to a plan.
+  toolkit:
+    - { name: Claude Code, does: "main driver: parallel sessions, one per workstream" }
+    - { name: Cursor, does: in-editor edits and fast refactors }
+    - { name: Cline, does: agentic tasks inside VS Code }
+    - { name: MCP, does: "agents wired into docs, data and services" }
+    - { name: LLM APIs, does: "RAG, embeddings and generation inside the products themselves" }
+  loop:
+    - { step: SPEC.md, does: product spec and designs, written first }
+    - { step: CLAUDE.md, does: "house rules: stack, style, limits" }
+    - { step: MEMORY + REGISTRY, does: agents keep a map of features and files }
+    - { step: parallel agents, does: one per platform or feature }
+    - { step: review + ship, does: I read every diff before it merges }
+  # Static stats. Repo and language counts are fetched live at build time.
+  platforms: 4
+  platforms_note: macOS, mobile, web, backend
+
+# Projects. featured: false keeps an entry here without showing it.
+# lane: studio (Biibisoft, owned by me) | pro (day job) | vault (older work)
+# status: live | wip | work
+# shipped_in: optional, e.g. "9 days". Shows on the card. Backs up the speed claim.
+projects:
+  - id: termite
+    lane: studio
+    name: Termite
+    featured: true
+    status: live
+    url: https://termite-174fd.web.app
+    blurb: A macOS terminal where tabs live in a sidebar, named and colour-tagged so you can find them.
+    tags: [[Swift, f05138], [macOS]]
+
+  - id: selltns
+    lane: studio
+    name: Selltns
+    featured: true
+    status: wip
+    url: https://selltns-web.vercel.app
+    blurb: Storefronts for Ghanaian sellers. Set up a store, share one link, get paid by Mobile Money or bank.
+    tags: [[TypeScript, 3178c6], [multi-tenant]]
+
+  - id: booktns
+    lane: studio
+    name: Booktns
+    featured: true
+    status: wip
+    url: https://booktns.vercel.app
+    blurb: Booking and storefronts for beauty vendors. Customers book and buy; vendors run it from one dashboard.
+    tags: [[TypeScript, 3178c6], [SaaS]]
+
+  - id: jejestatus
+    lane: studio
+    name: JejeStatus
+    featured: true
+    status: wip
+    blurb: Encodes videos once, on the phone, inside WhatsApp's limits, so Status stops blurring them.
+    tags: [[Mobile, 61dafb], [H.264 · ≤30 fps]]
+
+  - id: dwaso
+    lane: studio
+    name: DwasoGH
+    featured: false
+    status: wip
+    url: https://github.com/frimpongopoku/dwaso
+    blurb: A mobile shopping app for Ghana.
+    tags: [[React Native, 61dafb], [Expo]]
+
+  - id: writeflow
+    lane: studio
+    name: WriteFlow
+    featured: false
+    status: wip
+    url: https://writeflow-gules.vercel.app
+    blurb: "A WYSIWYG markdown editor: write like a doc, keep plain markdown underneath."
+    tags: [[TypeScript, 3178c6], [Firebase, ffca28]]
+
+  - id: subtrack
+    lane: studio
+    name: Subtrack
+    featured: false
+    status: wip
+    url: https://subtrack-dusky.vercel.app
+    blurb: Track every subscription you pay for in one place.
+    tags: [[TypeScript, 3178c6]]
+
+  - id: payreq
+    lane: studio
+    name: PayReq
+    featured: false
+    status: wip
+    url: https://pay-req-lac.vercel.app
+    blurb: A platform for sending and managing payment requests.
+    tags: [[TypeScript, 3178c6]]
+
+  - id: biblejournal
+    lane: studio
+    name: Bible Journal
+    featured: false
+    status: wip
+    url: https://biblejournal.vercel.app
+    blurb: A journaling app for Bible study notes.
+    tags: [[TypeScript, 3178c6]]
+
+  - id: typing
+    lane: studio
+    name: Stella Teaches Typing
+    featured: false
+    status: wip
+    blurb: Learn to type with guide hands that show which finger presses every key, plus an arcade.
+    tags: [[TypeScript, 3178c6], [browser game]]
+
+  - id: facinated
+    lane: studio
+    name: Facinated Media
+    featured: false
+    status: live
+    url: https://github.com/frimpongopoku/facinated-media
+    blurb: A pipeline that generates and posts social images for facinated.com on its own.
+    tags: [[Python, 3572A5], [automation]]
+
+  - id: me-platform
+    lane: pro
+    name: MassEnergize platform
+    featured: true
+    status: work
+    url: https://www.massenergize.org
+    blurb: Engineering on the platform communities use to run local climate and clean-energy campaigns.
+    tags: [[Python, 3572A5], [React, 61dafb]]
+
+  # Day-job work. Keep featured: false until MassEnergize says it's fine to show.
+  - id: me-ai
+    lane: pro
+    name: Newsletter AI pipeline
+    featured: false
+    status: work
+    blurb: Retrieval pipeline over community content with pgvector embeddings, feeding generated newsletter drafts.
+    tags: [[Python, 3572A5], [pgvector · RAG]]
+
+  - id: fut-plaque
+    lane: vault
+    name: Fut Plaque
+    featured: true
+    url: https://fut-plaque.vercel.app
+    blurb: make memories of your best FUT pulls.
+    stack: JS + Python
+
+  - id: perfect-attendance
+    lane: vault
+    name: Perfect Attendance
+    featured: true
+    url: https://github.com/frimpongopoku/perfect-attendance
+    blurb: a bot that attends your Google Meet classes for you.
+    stack: Python
+
+  - id: 100k
+    lane: vault
+    name: 100k
+    featured: true
+    url: https://github.com/frimpongopoku/100k
+    blurb: map and scan trees toward a 100,000-tree planting goal.
+    stack: Laravel + MySQL
+
+  - id: mc
+    lane: vault
+    name: MC
+    featured: false
+    url: https://github.com/frimpongopoku/MC
+    blurb: kitchen tracking that flags stock gaps between stations.
+    stack: PHP
+
+  - id: hot-quakes
+    lane: vault
+    name: Hot Quakes
+    featured: false
+    url: https://github.com/frimpongopoku/hot-quakes
+    blurb: earthquake data on Android.
+    stack: Java
+
+stack:
+  - { layer: mac, items: [Swift, AppKit, SwiftUI] }
+  - { layer: mobile, items: [React Native, Expo, Java / Android] }
+  - { layer: web, items: [TypeScript, React, Next.js, Tailwind] }
+  - { layer: backend, items: [Python / Django, FastAPI, Node / NestJS, PHP / Laravel, Firebase] }
+  - { layer: ai + data, items: [pgvector, embeddings, RAG, LLM APIs] }
+  - { layer: infra, items: [AWS, Docker, WordPress multisite] }
+
+footer: Built in Accra, Ghana · open to interesting problems

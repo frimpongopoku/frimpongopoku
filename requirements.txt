@@ -1,0 +1,3 @@
+pyyaml>=6
+fonttools>=4.25
+brotli>=1.0
